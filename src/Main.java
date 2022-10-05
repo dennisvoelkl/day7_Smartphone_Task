@@ -20,5 +20,7 @@ public class Main {
         System.out.println(handy1);
         //handy1.setPhoneNumber();
         System.out.println("\n\nKontakte: " + handy1.phonebook);
+        handy1.addContact("00000", "Kalus");
+        System.out.println("Alle Kontakte: " +  handy1.phonebook);
     }
 }
