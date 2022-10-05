@@ -6,19 +6,25 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 @Data
-public class Smartphone extends Friend implements Radio, GPS {
+public class Smartphone implements Radio, GPS {
 
     //Attribute
     private String modelName;
     private String manufactureName;
+    private java.util.ArrayList<String> ArrayList;
     //private ArrayList<Contact> contactList;
     //Array[] phonebook = new Array[2];
+    //Kontakte
+    Contact friend1 = new Friend("Hans", "0173838");
+    Contact friend2 = new Friend("Wurst", "0815");
+    ArrayList<String> phonebook = new ArrayList<>();
+
 
     //Konstruktor default
     public Smartphone(){}
     //Konstruktor mit allen Werten
-    public Smartphone(String telefonnummer, String name, String modelName, String manufactureName) {
-        super(telefonnummer, name);
+    public Smartphone(String modelName, String manufactureName) {
+        //super(telefonnummer, name);
         this.modelName = modelName;
         this.manufactureName = manufactureName;
     }
@@ -62,8 +68,10 @@ public class Smartphone extends Friend implements Radio, GPS {
         return "Smartphone{" +
                 "modelName='" + modelName + '\'' +
                 ", manufactureName='" + manufactureName + '\'' +
-                ", telefonnummer='" + telefonnummer + '\'' +
-                ", contactName='" + contactName + '\'' +
-                "} " + super.toString();
+                ", ArrayList=" + ArrayList +
+                ", friend1=" + friend1 +
+                ", friend2=" + friend2 +
+                ", phonebook=" + phonebook +
+                '}';
     }
 }
