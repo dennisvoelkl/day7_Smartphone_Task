@@ -1,4 +1,4 @@
-public abstract class Contact extends Smartphone{
+public abstract class Contact{
     //Attribute
     String contactName;
     //Konstruktor

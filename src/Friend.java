@@ -7,12 +7,12 @@ public class Friend extends Contact{
     //Konstruktor
     public Friend(String telefonnummer, String name) {
         this.telefonnummer = telefonnummer;
-        this.contactName = name;
+        super.contactName = name;
     }
     //Methoden
     public String toString(){
-        return ("Name: " + this.contactName +
-                "\nNummer: " + this.telefonnummer);
+        return ("Name: " + contactName +
+                "\nNummer: " + telefonnummer);
         }
 
         public String getName(){
