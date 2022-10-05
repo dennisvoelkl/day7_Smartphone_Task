@@ -16,9 +16,10 @@ public class Smartphone implements Radio, GPS {
     //private ArrayList<Contact> contactList;
     //Array[] phonebook = new Array[2];
     //Kontakte
-    Contact friend1 = new Friend("Hans", "0173838");
-    Contact friend2 = new Friend("Wurst", "0815");
-    Contact friend3 = new Friend("Peter", "98746423");
+    Friend friend1 = new Friend("Hans", "0173838");
+    Friend friend2 = new Friend("Wurst", "0815");
+    Friend friend3 = new Friend("Peter", "98746423");
+    Friend friend4 = new Friend("Klaus", "000000");
     List<Contact> phonebook = new ArrayList<>(List.of(friend1,friend2, friend3));
 
     //Konstruktor default
