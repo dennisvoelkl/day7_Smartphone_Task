@@ -1,12 +1,8 @@
 public abstract class Contact extends Smartphone{
     //Attribute
+    String contactName;
     //Konstruktor
-    public void Contact(){
-    }
-
     //Methoden
-    private void getName() {
-
-    }
+    public abstract String getName();
 
 }
